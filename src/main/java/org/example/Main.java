@@ -19,6 +19,10 @@ public class Main implements HttpFunction {
         response.setStatusCode(HttpURLConnection.HTTP_OK);
         writer.write("Hello world!");
         break;
+      case "POST":
+        response.setStatusCode(HttpURLConnection.HTTP_CREATED);
+        writer.write("POST");
+        break;
       case "PUT":
         response.setStatusCode(HttpURLConnection.HTTP_FORBIDDEN);
         writer.write("Forbidden!");
