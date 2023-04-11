@@ -21,7 +21,7 @@ public class Main implements HttpFunction {
         break;
       case "POST":
         response.setStatusCode(HttpURLConnection.HTTP_CREATED);
-        writer.write("POST");
+        writer.write("POST edited");
         break;
       case "PUT":
         response.setStatusCode(HttpURLConnection.HTTP_FORBIDDEN);
